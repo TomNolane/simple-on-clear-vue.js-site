@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>LineZAIM - сервис займов №2</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+<meta name="Description" content="Круглосуточно. Срочные займы без проверок и онлайн 24/7" />
+<meta name="Keywords" content="моментальный заем, займы, онлайн деньги" />
+<meta name="robots" content="all" />
+<meta name="copyright" lang="ru" content="linezaim.ru" />
+<meta property="og:title" content="Круглосуточно. Срочные займы без проверок и онлайн 24/7" />
+<meta property="og:description" content="LineZAIM - лучший онлайн сервис с 2018 года по предоставлению выгодных займов!" />
+<meta property="og:image" content="//linezaim.ru/ges/loremipsumlogo.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="//linezaim.ru/" />
+<meta name="twitter:card" content="//linezaim.ru/ges/loremipsumlogo.jpg" />
+<meta name="twitter:title" content="Круглосуточно. Срочные займы без проверок и онлайн 24/7" />
+<meta name="twitter:description" content="LineZAIM - лучший онлайн сервис с 2018 года по предоставлению выгодных займов!" />
+<meta name="twitter:image:src" content="//linezaim.ru/ges/loremipsumlogo.jpg" />
+<meta name="twitter:url" content="//linezaim.ru/" />
+<meta name="twitter:domain" content="linezaim.ru" />
+</head>
+
+<body class="is-loading">
+  <!-- app -->
+  <div id="app">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+      <!-- Header -->
+      <header id="header">
+        <vc-header></vc-header>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <vc-which-page-home></vc-which-page-home>
+        <vc-social-icons></vc-social-icons>
+      </nav>
+      <!-- Main -->
+      <div id="main">
+        <!-- Featured Post -->
+        <!-- Posts -->
+        <section class="posts">
+
+          <!-- each template is an article -->
+          <template v-for="article in articles">
+            <article>
+              <a v-bind:href="article.link">
+                <img class="image fit" v-bind:src="article.img" /></a>
+              <h2><a v-bind:href="article.link">{{article.name}}</a></h2>
+              <ul class="actions">
+              <li><span>до {{article.price}} <i class="fa fa-ruble"></i></span></li>
+                <li><a v-bind:href="article.link" target="_blank" class="button">
+                    <div class="icon fa-ruble">
+                      Получить деньги</div>
+                  </a></li>
+              <li><span>{{article.procent}}<i class="fa fa-percent"></i></span></li>
+              </ul>
+            <h3>от {{article.age}} <i class="fa fa-user"></i></h3>
+            </article>
+          </template>
+          <!-- <article>
+            <h2>Whaat?</h2><br />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Duis at quam et erat efficitur congue.
+Maecenas facilisis justo nec lacinia porttitor.
+Aliquam finibus turpis in imperdiet ultricies.
+In eu massa nec leo pellentesque loborti
+              <br /><br /></p>
+
+          </article> -->
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+        </footer>
+
+      </div>
+
+
+      <!-- Copyright -->
+      <vc-copyright></vc-copyright>
+
+    </div>
+    <!-- /Wrapper -->
+
+
+  </div>
+  <!-- /app -->
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/vue.js"></script>
+  <script src="assets/js/vue_app.js"></script>
+  <script>
+  </script>
+
+</body>
+
+</html>
